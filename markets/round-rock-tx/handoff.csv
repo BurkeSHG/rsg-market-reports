@@ -27,25 +27,26 @@ Section,Field,Value,Unit,Source,Status,Note
 03 Audit CTA card,Destination,rsgonzales.com/seo-audit-for-hvac/,url,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 04 Channel 1 Google Maps,H2,See Exactly Where You Rank Against Every Major HVAC Company in Round Rock,headline,"template pattern, city merged",FILLED,
 04 Channel 1 Google Maps,Core search terms,AC repair Round Rock | HVAC Round Rock,list,fixed pattern per city,FILLED,
-04 Channel 1 Google Maps,Companies tracked,43,count,every real contractor scored (all rows in companies.csv),FILLED,
+04 Channel 1 Google Maps,Companies tracked,42,count,every real contractor scored (all rows in companies.csv),FILLED,
 04 Channel 1 Google Maps,Companies shown in the table,10,count,rows in companies.csv with InTable = Yes,FILLED,
-04 Channel 1 Google Maps,Scorecard table,"see companies.csv: 43 scored, render the 10 rows with InTable = Yes",table,companies.csv,FILLED,
+04 Channel 1 Google Maps,Scorecard table,"see companies.csv: 42 scored, render the 10 rows with InTable = Yes",table,companies.csv,FILLED,
 04 Channel 1 Google Maps,Legend,Observed / Not there / No public data,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
-04 Channel 1 Google Maps,Narrative paragraph 1,"Radiant Plumbing, Air Conditioning, & Electrical carries 17,775 reviews and still does not hold a top-three map spot, while Round Rock Air Conditioning Repair ranks with 14. Review volume alone does not decide the map.",paragraph,written per city from the scorecard,FILLED,
-04 Channel 1 Google Maps,Narrative paragraph 2,"We scored 43 HVAC companies serving Round Rock. The 10 shown range from 17,775 reviews down to 1,190, and 0 of them hold a top-three map position for the core searches. Across all 43, 5 do.",paragraph,written per city from the scorecard,FILLED,
+04 Channel 1 Google Maps,Narrative paragraph 1,"We scored 42 HVAC companies serving Round Rock. The 10 shown range from 17,775 reviews down to 1,190, and 0 of them hold a top-three map position for the core searches. Across all 42, 4 do.",paragraph,written per city from the scorecard,FILLED,
+04 Channel 1 Google Maps,Narrative paragraph 2,,paragraph,written per city from the scorecard,PENDING,Written by Burke from the scorecard.
 04 Channel 1 Google Maps,Section photo,,image,assets.csv slot secondary_landmark,PENDING,Web team supplies. See assets.csv.
-05 Bar pair graphic,"High reviews, NOT top 3: company","Radiant Plumbing, Air Conditioning, & Electrical",text,highest review_count with top3_map = No (derived),FILLED,
-05 Bar pair graphic,"High reviews, NOT top 3: reviews","17,775",count,derived,FILLED,
-05 Bar pair graphic,"Low reviews, IN top 3: company",Round Rock Air Conditioning Repair,text,lowest review_count with top3_map = Yes (derived),FILLED,
-05 Bar pair graphic,"Low reviews, IN top 3: reviews",14,count,derived,FILLED,
+05 Bar pair graphic,"High reviews, NOT top 3: company",,text,highest review_count with top3_map = No (derived),PENDING,Missing from the market JSON. Supplied by the collector (Burke).
+05 Bar pair graphic,"High reviews, NOT top 3: reviews",,count,derived,PENDING,Missing from the market JSON. Supplied by the collector (Burke).
+05 Bar pair graphic,"Low reviews, IN top 3: company",,text,lowest review_count with top3_map = Yes (derived),PENDING,Missing from the market JSON. Supplied by the collector (Burke).
+05 Bar pair graphic,"Low reviews, IN top 3: reviews",,count,derived,PENDING,Missing from the market JSON. Supplied by the collector (Burke).
 05 Bar pair graphic,Bar scale maximum,"17,775",count,max review_count in the scorecard (derived),FILLED,
 06 Maps source note,Top-3 holders in this list,0,count,count of top3_map = Yes (derived),FILLED,
-06 Maps source note,Outside-the-list footnote,"Only 0 of the 10 companies shown hold a top-three map spot, so the remaining position or positions are held by a company outside this table (5 of them ranked below the table in the full scored list).",text,derived when holders < 3,FILLED,
+06 Maps source note,Outside-the-list footnote,"Only 0 of the 10 companies shown hold a top-three map spot, so the remaining position or positions are held by a company outside this table (4 of them ranked below the table in the full scored list).",text,derived when holders < 3,FILLED,
 06 Maps source note,Reviews as-of month,September 2026,text,collection date,FILLED,
 07 Reviews explainer,H3 and 2 paragraphs,Reviews Are Not the Whole Story (static copy),copy,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 07 Reviews explainer,Section photo,,image,assets.csv slot typical_home,PENDING,Web team supplies. See assets.csv.
 08 CTA,Button,Book a Straight-Talk Strategy Session -> /book-strategy-session/,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 09 Channel 2 Paid Search,H2,Google Has Turned Into a Pay-to-Play Search Engine,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+09 Channel 2 Paid Search,Sub-head,"The Top of the Results Page Is Now Sold, Not Earned",headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 09 Channel 2 Paid Search,Intro paragraph,Most Round Rock shops still think of Google as a place where the best answer wins.,paragraph,"static copy, city merged",FILLED,
 09 Channel 2 Paid Search,Zone 01 stat: above organic with LSA,55.8%,percent,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 09 Channel 2 Paid Search,Zone 01 stat: paid share change,2x,multiple,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
@@ -67,7 +68,7 @@ Section,Field,Value,Unit,Source,Status,Note
 11 Channel 2 Local Services Ads,What decides lead volume (4 cards),Review momentum / Services promoted / Market coverage / Account management,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 15 Channel 2 Pay-Per-Click,H3,Pay-Per-Click Is What Separates the Shops That Scale From the Ones That Stall,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 15 Channel 2 Pay-Per-Click,"Cost per click, AC repair",$95.72,USD/click,Search Atlas keyword research at the city geo target,FILLED,
-15 Channel 2 Pay-Per-Click,Share not running PPC claim,13 of the 39 Round Rock HVAC companies whose advertiser status could be resolved are not running Google ads.,sentence,Ads Transparency Center across every scored company,FILLED,
+15 Channel 2 Pay-Per-Click,Share not running PPC claim,13 of the 38 Round Rock HVAC companies whose advertiser status could be resolved are not running Google ads.,sentence,Ads Transparency Center across every scored company,FILLED,
 15 Channel 2 Pay-Per-Click,Landing page vs homepage lift,5x to 8x,multiple,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 15 Channel 2 Pay-Per-Click,Section background photo,,image,assets.csv slot skyline_or_aerial_2,PENDING,Web team supplies. See assets.csv.
 17 Channel 3 AI Answers,H2,AI Is Already Recommending Round Rock HVAC Companies by Name. Is It Recommending You?,headline,"template pattern, city merged",FILLED,
@@ -79,7 +80,7 @@ Section,Field,Value,Unit,Source,Status,Note
 17 Channel 3 AI Answers,"AI row 3 badge: Service Wizard Air Conditioning, Heating, and Plumbing","no badge (mentioned NO, recommended NO)",text,derived: mentioned vs recommended vs review rank,FILLED,"No pill for this row by design. Only three states earn one: MOST REVIEWS NEVER RECOMMENDED, IN BOTH, RECOMMENDED NEVER MENTIONED."
 17 Channel 3 AI Answers,AI row 4 badge: Crows Plumbing Service,"no badge (mentioned NO, recommended NO)",text,derived: mentioned vs recommended vs review rank,FILLED,"No pill for this row by design. Only three states earn one: MOST REVIEWS NEVER RECOMMENDED, IN BOTH, RECOMMENDED NEVER MENTIONED."
 17 Channel 3 AI Answers,AI row 5 badge: Airtron Heating & Air Conditioning,"no badge (mentioned NO, recommended NO)",text,derived: mentioned vs recommended vs review rank,FILLED,"No pill for this row by design. Only three states earn one: MOST REVIEWS NEVER RECOMMENDED, IN BOTH, RECOMMENDED NEVER MENTIONED."
-17 Channel 3 AI Answers,Mention-vs-recommend contrast sentence,"Radiant Plumbing, Air Conditioning, & Electrical carries 17,775 reviews and the engines did not recommend it, while Koala Cooling & Plumbing: Plumbing Department was recommended with 345. That gap is a content and structure gap, not a reputation gap.",sentence,derived from the AI table,FILLED,
+17 Channel 3 AI Answers,Mention-vs-recommend contrast sentence,"Radiant Plumbing, Air Conditioning, & Electrical carries 17,775 reviews and the engines did not recommend it, while Austin Air Conditioning was recommended with 1,412. That gap is a content and structure gap, not a reputation gap.",sentence,derived from the AI table,FILLED,
 17 Channel 3 AI Answers,Pages built for AI to quote,1 of 4,N of 5,crawl of the highest-reviewed sites,FILLED,
 17 Channel 3 AI Answers,Sites with any Q&A content,3 of 4,N of 5,crawl of the highest-reviewed sites,FILLED,
 17 Channel 3 AI Answers,AI reference link,rsgonzales.com/llm-info/,url,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
@@ -93,6 +94,7 @@ Section,Field,Value,Unit,Source,Status,Note
 22 Sarah's Take,H2 and 3 paragraphs,"This Is Not a Lead Problem. It Is a System Problem. (static copy, city merged in paragraph 1)",copy,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 22 Sarah's Take,Section photo,,image,assets.csv slot neighborhood_2,PENDING,Web team supplies. See assets.csv.
 23 One System,"H2, H3, 4 blocks, 2 closing paragraphs","Just Like HVAC Systems, Marketing Works Best When Every Component Works Together (static copy and client proof images)",copy,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+25 Pricing,H2,What It Costs to Work With Us,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 25 Pricing,Grow,"$2,200/mo",USD/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 25 Pricing,Accelerate,"$3,500/mo",USD/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 25 Pricing,Dominate,"$5,000/mo",USD/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
@@ -104,6 +106,9 @@ Section,Field,Value,Unit,Source,Status,Note
 27 Where this goes next,Trust badges,$0 setup fees / 0% ad markup / 30-day money-back guarantee,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 27 Where this goes next,Phone,(202) 400-2644,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 27 Where this goes next,Closing photo,,image,assets.csv slot closing_scene,PENDING,Web team supplies. See assets.csv.
+28 Method and sources,H2,How These Numbers Were Put Together,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+28 Method and sources,H3 a,Method,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+28 Method and sources,H3 b,Sources,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 28 Method and sources,Sizing formula sentence,"63,600 homes x $800 blended annual residential HVAC spend, 40% treated as decided online.",sentence,derived from households,FILLED,
 28 Method and sources,Volume and CPC source,"Search Atlas Keyword Research, generic terms at the city Google Ads geo target, close variants de-duplicated",text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 28 Method and sources,Geo target used for volume,"1026748 (Round Rock,Texas,United States)",Google Ads criteria ID,recorded by the collector next to the research id,FILLED,
@@ -124,10 +129,12 @@ Section,Field,Value,Unit,Source,Status,Note
 30 Collector flags (read these),Flag 2,CPC coverage: 7 of 17 distinct terms returned a cost per click above zero. Google reports no bid data for most small-market terms; the per-click card rests on the core term alone.,note,collection log,FILLED,Carried from the collector. Read before building.
 30 Collector flags (read these),Flag 3,"Keyword lanes: 5 lower-volume term(s) left out so the lanes hold 12: thermostat installation, emergency ac repair, ac tune up, heat pump repair, heating repair.",note,collection log,FILLED,Carried from the collector. Read before building.
 30 Collector flags (read these),Flag 4,"AI visibility ran on 4 of 5 engines via Search Atlas Prompt Simulation: Gemini, Google AI Mode, ChatGPT, Perplexity. No answer returned from: Copilot. Copy must claim only the engines that answered.",note,collection log,FILLED,Carried from the collector. Read before building.
-30 Collector flags (read these),Flag 5,"running_google_ads is ""No public data"" for 4 of 43 companies: the Ads Transparency Center verdict could not be read (4 of them have no website on the Business Profile). Not the same as No.",note,collection log,FILLED,Carried from the collector. Read before building.
-30 Collector flags (read these),Flag 6,"years_in_business null for 41 of 43: only the top 5 sites are crawled for a ""since YYYY"" line, and it is never inferred. NOTE: this field is NOT in the template contract's company table, so it blocks nothing.",note,collection log,FILLED,Carried from the collector. Read before building.
-30 Collector flags (read these),Flag 7,"Sendable audience: 17 of 43 scored companies have an email in data/harvest/TEXAS-MASTER.csv (6 named mailboxes; 2 of the 10 in the table). Matched by website domain first, then exact company name within the market. The other 26 are phone and contact-form targets.",note,collection log,FILLED,Carried from the collector. Read before building.
-30 Collector flags (read these),Flag 8,"ai_top5_quotable_page_count denominator is 4, not 5: the rest had no website or did not load.",note,collection log,FILLED,Carried from the collector. Read before building.
-30 Collector flags (read these),Flag 9,Photo slots and their alt text and captions are supplied by the web team. A script cannot license city photography. See TEMPLATE-CONTRACT section 7.,note,collection log,FILLED,Carried from the collector. Read before building.
-30 Collector flags (read these),Flag 10,"ppc_scaled_claim null by decision (Burke, 2026-09-04): the revenue-threshold PPC sentence needs revenue data RSG does not have and never will. The sentence is dropped from every city and its row is gone from the handoff sheet.",note,collection log,FILLED,Carried from the collector. Read before building.
-30 Collector flags (read these),Flag 11,"Shape note: this file follows data/markets/schema.template.json (the master template contract). render-report.mjs validates the OLDER data/markets/schema.json instead, so it cannot render this file yet. TEMPLATE-CONTRACT section 5 lists what the renderer must change.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 5,Photo slots and their alt text and captions are supplied by the web team. A script cannot license city photography. See TEMPLATE-CONTRACT section 7.,note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 6,"ppc_scaled_claim null by decision (Burke, 2026-09-04): the revenue-threshold PPC sentence needs revenue data RSG does not have and never will. The sentence is dropped from every city and its row is gone from the handoff sheet.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 7,"Shape note: this file follows data/markets/schema.template.json (the master template contract). render-report.mjs validates the OLDER data/markets/schema.json instead, so it cannot render this file yet. TEMPLATE-CONTRACT section 5 lists what the renderer must change.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 8,bar_pair suppressed and the first maps_narrative sentence with it: no company in the rendered table holds a top-three map spot. Never filled from outside the rendered table.,note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 9,"Sendable audience: 16 of 42 scored companies have an email in data/harvest/TEXAS-MASTER.csv (6 named mailboxes; 2 of the 10 in the table). Matched by website domain first, then exact company name within the market. The other 26 are phone and contact-form targets.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 10,"running_google_ads is ""No public data"" for 4 of 42 companies: the Ads Transparency Center verdict could not be read (4 of them have no website on the Business Profile). Not the same as No.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 11,"years_in_business null for 40 of 42: only the top 5 sites are crawled for a ""since YYYY"" line, and it is never inferred. NOTE: this field is NOT in the template contract's company table, so it blocks nothing.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 12,"ai_top5_quotable_page_count denominator is 4, not 5: the rest had no website, did not load, or entered the top five when duplicate profiles were collapsed and were never crawled.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 13,"Duplicate Google Business Profiles merged: 1 extra profile(s) folded into 1 company row(s). ""Koala Cooling & Plumbing: Plumbing Department"" (345 reviews) into ""Koala Cooling & Plumbing: HVAC Department"" (1036) on same domain koalacooling.com and same phone. The surviving row keeps its own review count, never a sum, and inherits any top-three map spot or AI recommendation observed on the profile it absorbed. See market.duplicate_profiles_merged.",note,collection log,FILLED,Carried from the collector. Read before building.

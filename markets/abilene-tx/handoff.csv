@@ -40,12 +40,13 @@ Section,Field,Value,Unit,Source,Status,Note
 05 Bar pair graphic,"Low reviews, IN top 3: reviews",217,count,derived,FILLED,
 05 Bar pair graphic,Bar scale maximum,"2,647",count,max review_count in the scorecard (derived),FILLED,
 06 Maps source note,Top-3 holders in this list,4,count,count of top3_map = Yes (derived),FILLED,
-06 Maps source note,Outside-the-list footnote,,text,derived when holders < 3,PENDING,Missing from the market JSON. Supplied by the collector (Burke).
+06 Maps source note,Outside-the-list footnote,,text,derived when holders < 3,N/A,"null by design: 3 or more companies in the table hold a top-three spot, so no outside holder needs explaining"
 06 Maps source note,Reviews as-of month,September 2026,text,collection date,FILLED,
 07 Reviews explainer,H3 and 2 paragraphs,Reviews Are Not the Whole Story (static copy),copy,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 07 Reviews explainer,Section photo,,image,assets.csv slot typical_home,PENDING,Web team supplies. See assets.csv.
 08 CTA,Button,Book a Straight-Talk Strategy Session -> /book-strategy-session/,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 09 Channel 2 Paid Search,H2,Google Has Turned Into a Pay-to-Play Search Engine,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+09 Channel 2 Paid Search,Sub-head,"The Top of the Results Page Is Now Sold, Not Earned",headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 09 Channel 2 Paid Search,Intro paragraph,Most Abilene shops still think of Google as a place where the best answer wins.,paragraph,"static copy, city merged",FILLED,
 09 Channel 2 Paid Search,Zone 01 stat: above organic with LSA,55.8%,percent,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 09 Channel 2 Paid Search,Zone 01 stat: paid share change,2x,multiple,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
@@ -79,7 +80,7 @@ Section,Field,Value,Unit,Source,Status,Note
 17 Channel 3 AI Answers,AI row 3 badge: Batjer Heating & Cooling,"no badge (mentioned NO, recommended NO)",text,derived: mentioned vs recommended vs review rank,FILLED,"No pill for this row by design. Only three states earn one: MOST REVIEWS NEVER RECOMMENDED, IN BOTH, RECOMMENDED NEVER MENTIONED."
 17 Channel 3 AI Answers,AI row 4 badge: Cutting Edge Air Conditioning and Heating,IN BOTH,text,derived: mentioned vs recommended vs review rank,FILLED,
 17 Channel 3 AI Answers,AI row 5 badge: Legit Heating and Air LLC,"no badge (mentioned YES, recommended NO)",text,derived: mentioned vs recommended vs review rank,FILLED,"No pill for this row by design. Only three states earn one: MOST REVIEWS NEVER RECOMMENDED, IN BOTH, RECOMMENDED NEVER MENTIONED."
-17 Channel 3 AI Answers,Mention-vs-recommend contrast sentence,"Black Plumbing Heating & Air carries 1,306 reviews and the engines did not recommend it, while Hawkins Air Conditioning was recommended with 72. That gap is a content and structure gap, not a reputation gap.",sentence,derived from the AI table,FILLED,
+17 Channel 3 AI Answers,Mention-vs-recommend contrast sentence,"Black Plumbing Heating & Air carries 1,306 reviews and the engines did not recommend it, while Cutting Edge Air Conditioning and Heating was recommended with 341. That gap is a content and structure gap, not a reputation gap.",sentence,derived from the AI table,FILLED,
 17 Channel 3 AI Answers,Pages built for AI to quote,0 of 4,N of 5,crawl of the highest-reviewed sites,FILLED,
 17 Channel 3 AI Answers,Sites with any Q&A content,2 of 4,N of 5,crawl of the highest-reviewed sites,FILLED,
 17 Channel 3 AI Answers,AI reference link,rsgonzales.com/llm-info/,url,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
@@ -93,6 +94,7 @@ Section,Field,Value,Unit,Source,Status,Note
 22 Sarah's Take,H2 and 3 paragraphs,"This Is Not a Lead Problem. It Is a System Problem. (static copy, city merged in paragraph 1)",copy,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 22 Sarah's Take,Section photo,,image,assets.csv slot neighborhood_2,PENDING,Web team supplies. See assets.csv.
 23 One System,"H2, H3, 4 blocks, 2 closing paragraphs","Just Like HVAC Systems, Marketing Works Best When Every Component Works Together (static copy and client proof images)",copy,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+25 Pricing,H2,What It Costs to Work With Us,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 25 Pricing,Grow,"$2,200/mo",USD/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 25 Pricing,Accelerate,"$3,500/mo",USD/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 25 Pricing,Dominate,"$5,000/mo",USD/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
@@ -104,6 +106,9 @@ Section,Field,Value,Unit,Source,Status,Note
 27 Where this goes next,Trust badges,$0 setup fees / 0% ad markup / 30-day money-back guarantee,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 27 Where this goes next,Phone,(202) 400-2644,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 27 Where this goes next,Closing photo,,image,assets.csv slot closing_scene,PENDING,Web team supplies. See assets.csv.
+28 Method and sources,H2,How These Numbers Were Put Together,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+28 Method and sources,H3 a,Method,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+28 Method and sources,H3 b,Sources,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 28 Method and sources,Sizing formula sentence,"49,400 homes x $800 blended annual residential HVAC spend, 40% treated as decided online.",sentence,derived from households,FILLED,
 28 Method and sources,Volume and CPC source,"Search Atlas Keyword Research, generic terms at the city Google Ads geo target, close variants de-duplicated",text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 28 Method and sources,Geo target used for volume,"1026170 (Abilene,Texas,United States)",Google Ads criteria ID,recorded by the collector next to the research id,FILLED,
@@ -127,10 +132,10 @@ Section,Field,Value,Unit,Source,Status,Note
 30 Collector flags (read these),Flag 5,"Lane membership at the cut is a tie: ""hvac installation"" (kept) and ""ac installation"" (dropped) both measure 10. The tie-break is ppcd then alphabetical, which is arbitrary at that volume.",note,collection log,FILLED,Carried from the collector. Read before building.
 30 Collector flags (read these),Flag 6,5 of 12 lane terms sit at the reporting floor (10 searches). The lanes are directional for a market this size.,note,collection log,FILLED,Carried from the collector. Read before building.
 30 Collector flags (read these),Flag 7,"AI visibility ran on 4 of 5 engines via Search Atlas Prompt Simulation: Gemini, Google AI Mode, ChatGPT, Perplexity. No answer returned from: Copilot. Copy must claim only the engines that answered.",note,collection log,FILLED,Carried from the collector. Read before building.
-30 Collector flags (read these),Flag 8,"running_google_ads is ""No public data"" for 1 of 21 companies: the Ads Transparency Center verdict could not be read (1 of them have no website on the Business Profile). Not the same as No.",note,collection log,FILLED,Carried from the collector. Read before building.
-30 Collector flags (read these),Flag 9,"years_in_business null for 19 of 21: only the top 5 sites are crawled for a ""since YYYY"" line, and it is never inferred. NOTE: this field is NOT in the template contract's company table, so it blocks nothing.",note,collection log,FILLED,Carried from the collector. Read before building.
-30 Collector flags (read these),Flag 10,"Sendable audience: 5 of 21 scored companies have an email in data/harvest/TEXAS-MASTER.csv (4 named mailboxes; 2 of the 10 in the table). Matched by website domain first, then exact company name within the market. The other 16 are phone and contact-form targets.",note,collection log,FILLED,Carried from the collector. Read before building.
-30 Collector flags (read these),Flag 11,"ai_top5_quotable_page_count denominator is 4, not 5: the rest had no website or did not load.",note,collection log,FILLED,Carried from the collector. Read before building.
-30 Collector flags (read these),Flag 12,Photo slots and their alt text and captions are supplied by the web team. A script cannot license city photography. See TEMPLATE-CONTRACT section 7.,note,collection log,FILLED,Carried from the collector. Read before building.
-30 Collector flags (read these),Flag 13,"ppc_scaled_claim null by decision (Burke, 2026-09-04): the revenue-threshold PPC sentence needs revenue data RSG does not have and never will. The sentence is dropped from every city and its row is gone from the handoff sheet.",note,collection log,FILLED,Carried from the collector. Read before building.
-30 Collector flags (read these),Flag 14,"Shape note: this file follows data/markets/schema.template.json (the master template contract). render-report.mjs validates the OLDER data/markets/schema.json instead, so it cannot render this file yet. TEMPLATE-CONTRACT section 5 lists what the renderer must change.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 8,Photo slots and their alt text and captions are supplied by the web team. A script cannot license city photography. See TEMPLATE-CONTRACT section 7.,note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 9,"ppc_scaled_claim null by decision (Burke, 2026-09-04): the revenue-threshold PPC sentence needs revenue data RSG does not have and never will. The sentence is dropped from every city and its row is gone from the handoff sheet.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 10,"Shape note: this file follows data/markets/schema.template.json (the master template contract). render-report.mjs validates the OLDER data/markets/schema.json instead, so it cannot render this file yet. TEMPLATE-CONTRACT section 5 lists what the renderer must change.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 11,"Sendable audience: 5 of 21 scored companies have an email in data/harvest/TEXAS-MASTER.csv (4 named mailboxes; 2 of the 10 in the table). Matched by website domain first, then exact company name within the market. The other 16 are phone and contact-form targets.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 12,"running_google_ads is ""No public data"" for 1 of 21 companies: the Ads Transparency Center verdict could not be read (1 of them have no website on the Business Profile). Not the same as No.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 13,"years_in_business null for 19 of 21: only the top 5 sites are crawled for a ""since YYYY"" line, and it is never inferred. NOTE: this field is NOT in the template contract's company table, so it blocks nothing.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 14,"ai_top5_quotable_page_count denominator is 4, not 5: the rest had no website, did not load, or entered the top five when duplicate profiles were collapsed and were never crawled.",note,collection log,FILLED,Carried from the collector. Read before building.
