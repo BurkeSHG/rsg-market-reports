@@ -1,0 +1,143 @@
+Section,Field,Value,Unit,Source,Status,Note
+00 Eyebrow and meta,City,Waxahachie,text,data/texas-markets.json,FILLED,
+00 Eyebrow and meta,State,Texas,text,data/texas-markets.json,FILLED,
+00 Eyebrow and meta,State abbreviation,TX,text,data/texas-markets.json,FILLED,
+00 Eyebrow and meta,URL slug,waxahachie-tx,text,markets file,FILLED,
+00 Eyebrow and meta,Page URL,/market-report/waxahachie-tx/,path,TEMPLATE-CONTRACT section 7,FILLED,
+00 Eyebrow and meta,Meta title,Where Waxahachie HVAC Companies Rank Online in 2026,text,TEMPLATE-CONTRACT section 7 pattern,FILLED,
+00 Eyebrow and meta,Meta description,"See where every major HVAC company in Waxahachie stands on Google Maps, paid ads, and AI answers, and which lanes are still open. Book a strategy session.",text,TEMPLATE-CONTRACT section 7 pattern,FILLED,
+00 Eyebrow and meta,Robots,"noindex, nofollow (meta AND X-Robots-Tag header)",directive,TEMPLATE-CONTRACT section 7,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+00 Eyebrow and meta,Eyebrow label,HVAC MARKET INTELLIGENCE,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+00 Eyebrow and meta,Report month stamp,September 2026,text,collection date,FILLED,
+00 Eyebrow and meta,Metro label,the Waxahachie and Midlothian area,text,markets file,FILLED,
+01 Hero,H1,360 Homeowners Search for HVAC in Waxahachie Every Month. Where Do You Show Up?,headline,"monthly_searches + city, template pattern",FILLED,
+01 Hero,Subhead,"We tracked the top HVAC companies in Waxahachie across Google Maps, paid ads, and AI answers. Here is where everyone stands, and where the open lanes are.",paragraph,"template pattern, city merged",FILLED,
+01 Hero,Channel strip,GOOGLE MAPS / PAID SEARCH / AI ANSWERS,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+01 Hero,Byline,Prepared by Sarah Gonzales,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+01 Hero,Tagline,We do marketing for HVAC and home-services contractors. Nothing else.,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+01 Hero,Hero background photo,,image,assets.csv slot hero_landmark,PENDING,Web team supplies. See assets.csv.
+02 Four stat tiles,Tile 1: residential HVAC spend,$41.7M,USD/year,homes x $800 (FORMULA.md),FILLED,
+02 Four stat tiles,Tile 2: share decided online,$16.7M,USD/year,40% of tile 1 (FORMULA.md),FILLED,
+02 Four stat tiles,Tile 3: monthly searches,360,searches/month,"Search Atlas keyword research, generic terms at city geo target, de-duplicated",FILLED,
+02 Four stat tiles,Tile 4: top-3 map click share,44%,percent,third-party industry stat,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+02 Four stat tiles,Households used for sizing,"52,100",homes,data/texas-markets.json,FILLED,
+02 Four stat tiles,Households basis note,"data/texas-markets.json: Census Vintage 2024 estimates, sum of incorporated places: Waxahachie 48,617; Midlothian 44,104; Red Oak 19,365; Ennis 24,753; Ovilla 4,771; Ferris 4,200",text,markets file,FILLED,
+02 Four stat tiles,Annual spend per home,$800,USD/year,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+03 Audit CTA card,Button label,Get My Free 'HVAC in Waxahachie' Audit,text,"template pattern, city merged",FILLED,
+03 Audit CTA card,Destination,rsgonzales.com/seo-audit-for-hvac/,url,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+04 Channel 1 Google Maps,H2,See Exactly Where You Rank Against Every Major HVAC Company in Waxahachie,headline,"template pattern, city merged",FILLED,
+04 Channel 1 Google Maps,Core search terms,AC repair Waxahachie | HVAC Waxahachie,list,fixed pattern per city,FILLED,
+04 Channel 1 Google Maps,Companies tracked,33,count,every real contractor scored (all rows in companies.csv),FILLED,
+04 Channel 1 Google Maps,Companies shown in the table,10,count,rows in companies.csv with InTable = Yes,FILLED,
+04 Channel 1 Google Maps,Scorecard table,"see companies.csv: 33 scored, render the 10 rows with InTable = Yes",table,companies.csv,FILLED,
+04 Channel 1 Google Maps,Legend,Observed / Not there / No public data,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+04 Channel 1 Google Maps,Narrative paragraph 1,"Speedy Electric & A/C carries 1,244 reviews and still does not hold a top-three map spot, while H.E.A.T. Mechanical AC And Heat ranks with 196. Review volume alone does not decide the map.",paragraph,written per city from the scorecard,FILLED,
+04 Channel 1 Google Maps,Narrative paragraph 2,"We scored 33 HVAC companies serving Waxahachie. The 10 shown range from 1,263 reviews down to 196, and 2 of them hold a top-three map position for the core searches. Across all 33, 4 do.",paragraph,written per city from the scorecard,FILLED,
+04 Channel 1 Google Maps,Section photo,,image,assets.csv slot secondary_landmark,PENDING,Web team supplies. See assets.csv.
+05 Bar pair graphic,"High reviews, NOT top 3: company",Speedy Electric & A/C,text,highest review_count with top3_map = No (derived),FILLED,
+05 Bar pair graphic,"High reviews, NOT top 3: reviews","1,244",count,derived,FILLED,
+05 Bar pair graphic,"Low reviews, IN top 3: company",H.E.A.T. Mechanical AC And Heat,text,lowest review_count with top3_map = Yes (derived),FILLED,
+05 Bar pair graphic,"Low reviews, IN top 3: reviews",196,count,derived,FILLED,
+05 Bar pair graphic,Bar scale maximum,"1,263",count,max review_count in the scorecard (derived),FILLED,
+06 Maps source note,Top-3 holders in this list,2,count,count of top3_map = Yes (derived),FILLED,
+06 Maps source note,Outside-the-list footnote,"Only 2 of the 10 companies shown hold a top-three map spot, so the remaining position or positions are held by a company outside this table (2 of them ranked below the table in the full scored list).",text,derived when holders < 3,FILLED,
+06 Maps source note,Reviews as-of month,September 2026,text,collection date,FILLED,
+07 Reviews explainer,H3 and 2 paragraphs,Reviews Are Not the Whole Story (static copy),copy,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+07 Reviews explainer,Section photo,,image,assets.csv slot typical_home,PENDING,Web team supplies. See assets.csv.
+08 CTA,Button,Book a Straight-Talk Strategy Session -> /book-strategy-session/,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+09 Channel 2 Paid Search,H2,Google Has Turned Into a Pay-to-Play Search Engine,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+09 Channel 2 Paid Search,Sub-head,"The Top of the Results Page Is Now Sold, Not Earned",headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+09 Channel 2 Paid Search,Intro paragraph,Most Waxahachie shops still think of Google as a place where the best answer wins.,paragraph,"static copy, city merged",FILLED,
+09 Channel 2 Paid Search,Zone 01 stat: above organic with LSA,55.8%,percent,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+09 Channel 2 Paid Search,Zone 01 stat: paid share change,2x,multiple,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+09 Channel 2 Paid Search,Zone 02 stat: zero-click,68%,percent,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+09 Channel 2 Paid Search,Zone 03 stat: ads in the map pack,3% to 22%,percent,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+09 Channel 2 Paid Search,SERP query,emergency ac repair waxahachie,text,fixed pattern: emergency ac repair <city>,FILLED,
+09 Channel 2 Paid Search,SERP screenshot file,data/markets/_assets/waxahachie-tx/serp-waxahachie-tx.png,image,live logged-out Google search with city geo,FILLED,
+09 Channel 2 Paid Search,SERP capture date,2026-09-12,date,capture,FILLED,
+09 Channel 2 Paid Search,SERP description,"Live logged-out Google results for ""emergency ac repair waxahachie"", captured 2026-09-12. AI overview present: false. Sponsored result above the local pack: false. A human should confirm the four annotation zones before the page ships.",paragraph,written from the screenshot,FILLED,
+09 Channel 2 Paid Search,AI Overview present,No,Yes/No,observed on the SERP,FILLED,
+09 Channel 2 Paid Search,Section background photo,,image,assets.csv slot skyline_or_aerial_1,PENDING,Web team supplies. See assets.csv.
+11 Channel 2 Local Services Ads,H3,Local Services Ads Are the Closest Thing to Predictable HVAC Demand in Waxahachie,headline,"template pattern, city merged",FILLED,
+11 Channel 2 Local Services Ads,Cost per qualified lead,$60 to $105,USD/lead,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+11 Channel 2 Local Services Ads,Close rate,80%,percent,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+11 Channel 2 Local Services Ads,Return on ad spend,11x,multiple,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+11 Channel 2 Local Services Ads,Illustrative label (required),"Illustrative economics for a well-run account, not a guarantee.",text,"Sarah, Aug 20: the 3-box graphic must be labeled illustrative",CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+11 Channel 2 Local Services Ads,Slow month lead range,4 to 5 leads,leads/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+11 Channel 2 Local Services Ads,Peak month lead range,15 to 60 leads,leads/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+11 Channel 2 Local Services Ads,What decides lead volume (4 cards),Review momentum / Services promoted / Market coverage / Account management,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+15 Channel 2 Pay-Per-Click,H3,Pay-Per-Click Is What Separates the Shops That Scale From the Ones That Stall,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+15 Channel 2 Pay-Per-Click,"Cost per click, AC repair",$60.92,USD/click,Search Atlas keyword research at the city geo target,FILLED,
+15 Channel 2 Pay-Per-Click,Share not running PPC claim,14 of the 29 Waxahachie HVAC companies whose advertiser status could be resolved are not running Google ads.,sentence,Ads Transparency Center across every scored company,FILLED,
+15 Channel 2 Pay-Per-Click,Landing page vs homepage lift,5x to 8x,multiple,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+15 Channel 2 Pay-Per-Click,Section background photo,,image,assets.csv slot skyline_or_aerial_2,PENDING,Web team supplies. See assets.csv.
+17 Channel 3 AI Answers,H2,AI Is Already Recommending Waxahachie HVAC Companies by Name. Is It Recommending You?,headline,"template pattern, city merged",FILLED,
+17 Channel 3 AI Answers,AI engines actually queried,"Gemini, Google AI Mode, ChatGPT, Perplexity",list,Search Atlas Prompt Simulation,FILLED,
+17 Channel 3 AI Answers,Prompt set,"Who are the best HVAC companies in Waxahachie, TX? List company names. | I need emergency AC repair in Waxahachie, TX. Which local companies would you recommend?",list,fixed prompt family,FILLED,
+17 Channel 3 AI Answers,AI table (top 5 by reviews),"see companies.csv, first 5 rows, plus badges below",table,derived from the scorecard,FILLED,
+17 Channel 3 AI Answers,AI row 1 badge: Willard Air Conditioning & Plumbing,"MOST REVIEWS, NEVER RECOMMENDED",text,derived: mentioned vs recommended vs review rank,FILLED,
+17 Channel 3 AI Answers,AI row 2 badge: Speedy Electric & A/C,"no badge (mentioned NO, recommended NO)",text,derived: mentioned vs recommended vs review rank,FILLED,"No pill for this row by design. Only three states earn one: MOST REVIEWS NEVER RECOMMENDED, IN BOTH, RECOMMENDED NEVER MENTIONED."
+17 Channel 3 AI Answers,AI row 3 badge: Coomes Air Conditioning & Heating,"no badge (mentioned NO, recommended NO)",text,derived: mentioned vs recommended vs review rank,FILLED,"No pill for this row by design. Only three states earn one: MOST REVIEWS NEVER RECOMMENDED, IN BOTH, RECOMMENDED NEVER MENTIONED."
+17 Channel 3 AI Answers,AI row 4 badge: Texas Ace Service - Heating & Air,"no badge (mentioned NO, recommended NO)",text,derived: mentioned vs recommended vs review rank,FILLED,"No pill for this row by design. Only three states earn one: MOST REVIEWS NEVER RECOMMENDED, IN BOTH, RECOMMENDED NEVER MENTIONED."
+17 Channel 3 AI Answers,"AI row 5 badge: Dial One Johnson Plumbing, Cooling & Heating","no badge (mentioned NO, recommended NO)",text,derived: mentioned vs recommended vs review rank,FILLED,"No pill for this row by design. Only three states earn one: MOST REVIEWS NEVER RECOMMENDED, IN BOTH, RECOMMENDED NEVER MENTIONED."
+17 Channel 3 AI Answers,Mention-vs-recommend contrast sentence,,sentence,derived from the AI table,PENDING,Missing from the market JSON. Supplied by the collector (Burke).
+17 Channel 3 AI Answers,Pages built for AI to quote,1 of 5,N of 5,crawl of the highest-reviewed sites,FILLED,
+17 Channel 3 AI Answers,Sites with any Q&A content,5 of 5,N of 5,crawl of the highest-reviewed sites,FILLED,
+17 Channel 3 AI Answers,AI reference link,rsgonzales.com/llm-info/,url,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+20 Search terms,H2,"Which Waxahachie Search Terms You Can Still Win, and Which Are Already Locked Up",headline,"template pattern, city merged",FILLED,
+20 Search terms,Winnable terms,furnace repair | ac repair | hvac contractor | hvac installation,list (4),lowest third by paid competition density,FILLED,
+20 Search terms,Contested terms,thermostat installation | hvac repair | emergency ac repair | ac replacement,list (4),middle third by paid competition density,FILLED,
+20 Search terms,Locked terms,hvac service | hvac companies | air duct cleaning | ac service,list (4),highest third by paid competition density,FILLED,
+20 Search terms,Lane rule (for the methodology footer),"Generic terms measured at Google Ads geo target 1026873 (Waxahachie,Texas,United States). Close variants de-duplicated (1 group(s)). Of the 17 distinct terms, the 12 with the highest search volume that also returned a paid competition density (ppcd) were kept, sorted by ppcd ascending, tie-broken by keyword difficulty ascending then volume descending, and split by position into thirds: lane = floor(index * 3 / 12). Lowest paid competition is winnable, highest is locked. Terms with no ppcd are excluded rather than treated as zero. Reproducible from data/markets/_cache/waxahachie-tx/volumes.json.",text,recorded by the collector,FILLED,
+20 Search terms,Flywheel graphic,"win jobs -> reviews -> organic -> ads (Sarah, Aug 20)",graphic,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+20 Search terms,Section background photo,,image,assets.csv slot neighborhood_1,PENDING,Web team supplies. See assets.csv.
+22 Sarah's Take,H2 and 3 paragraphs,"This Is Not a Lead Problem. It Is a System Problem. (static copy, city merged in paragraph 1)",copy,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+22 Sarah's Take,Section photo,,image,assets.csv slot neighborhood_2,PENDING,Web team supplies. See assets.csv.
+23 One System,"H2, H3, 4 blocks, 2 closing paragraphs","Just Like HVAC Systems, Marketing Works Best When Every Component Works Together (static copy and client proof images)",copy,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+25 Pricing,H2,What It Costs to Work With Us,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+25 Pricing,Grow,"$2,200/mo",USD/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+25 Pricing,Accelerate,"$3,500/mo",USD/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+25 Pricing,Dominate,"$5,000/mo",USD/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+25 Pricing,Minimum ad budget,"$3,000/mo minimum",USD/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+25 Pricing,Fine print,"0% ad markup, website you own, $0 setup fees, 12-month lock, 30-day money-back guarantee",text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+27 Where this goes next,H2,360 Searches a Month. How Many End With Your Phone Ringing?,headline,reuses monthly_searches,FILLED,
+27 Where this goes next,Primary CTA,Book My Waxahachie Strategy Session -> /book-strategy-session/,text,"template pattern, city merged",FILLED,
+27 Where this goes next,Secondary CTA,Get My Free SEO Audit -> /seo-audit-for-hvac/,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+27 Where this goes next,Trust badges,$0 setup fees / 0% ad markup / 30-day money-back guarantee,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+27 Where this goes next,Phone,(202) 400-2644,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+27 Where this goes next,Closing photo,,image,assets.csv slot closing_scene,PENDING,Web team supplies. See assets.csv.
+28 Method and sources,H2,How These Numbers Were Put Together,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+28 Method and sources,H3 a,Method,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+28 Method and sources,H3 b,Sources,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+28 Method and sources,Sizing formula sentence,"52,100 homes x $800 blended annual residential HVAC spend, 40% treated as decided online.",sentence,derived from households,FILLED,
+28 Method and sources,Volume and CPC source,"Search Atlas Keyword Research, generic terms at the city Google Ads geo target, close variants de-duplicated",text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+28 Method and sources,Geo target used for volume,"1026873 (Waxahachie,Texas,United States)",Google Ads criteria ID,recorded by the collector next to the research id,FILLED,
+28 Method and sources,Reviews as-of,September 2026,text,collection date,FILLED,
+28 Method and sources,AI engines disclosure,"Gemini, Google AI Mode, ChatGPT, Perplexity",list,must match the engines actually queried,FILLED,
+28 Method and sources,CPC source line,"""ac repair"" cost per click about $60.92 at the Waxahachie geo target, Google Ads data via Search Atlas, September 2026",sentence,derived from the CPC,FILLED,
+28 Method and sources,AI-generated image disclosure,The kitchen scene in the closing section is AI-generated and disclosed in the method note.,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+28 Method and sources,Case studies reference,rsgonzales.com/case-studies/ (use Skyline),url,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+29 Footer,Footer line,Marketing for HVAC and home-services contractors / rsgonzales.com / (202) 400-2644,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+29b Cross-checks,Companies tracked equals scorecard rows,PASS,check,computed by build-handoff-sheet.mjs,FILLED,
+29b Cross-checks,Bar scale equals highest review count,PASS,check,computed by build-handoff-sheet.mjs,FILLED,
+29b Cross-checks,"Scorecard sorted strictly by reviews, descending",PASS,check,computed by build-handoff-sheet.mjs,FILLED,
+29b Cross-checks,Table rows are the highest-reviewed companies,PASS,check,computed by build-handoff-sheet.mjs,FILLED,
+29b Cross-checks,Market size equals homes x $800,PASS,check,computed by build-handoff-sheet.mjs,FILLED,
+29b Cross-checks,Online share equals 40% of market size,PASS,check,computed by build-handoff-sheet.mjs,FILLED,
+29b Cross-checks,Keyword lanes hold 4 terms each,PASS,check,computed by build-handoff-sheet.mjs,FILLED,
+30 Collector flags (read these),Flag 1,"monthly_searches = 360: the de-duplicated sum of 17 distinct generic terms (18 of 18 returned a value; 17 above zero, 0 measuring exactly zero) measured at Google Ads geo target 1026873 (Waxahachie,Texas,United States). Raw sum before de-duplication 500; 1 variant group(s) collapsed: ac repair = air conditioning repair (140). Confirmed stable by two identical reads 65s apart (read sums 500 -> 500). State the derivation wherever this number is published; never publish it bare.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 2,CPC coverage: 3 of 17 distinct terms returned a cost per click above zero. Google reports no bid data for most small-market terms; the per-click card rests on the core term alone.,note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 3,"Keyword lanes: 5 lower-volume term(s) left out so the lanes hold 12: ac tune up, hvac maintenance, ac installation, heat pump repair, heating repair.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 4,"Lane membership at the cut is a tie: ""thermostat installation"" (kept) and ""ac tune up"" (dropped) both measure 10. The tie-break is ppcd then alphabetical, which is arbitrary at that volume.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 5,6 of 12 lane terms sit at the reporting floor (10 searches). The lanes are directional for a market this size.,note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 6,"AI visibility ran on 4 of 5 engines via Search Atlas Prompt Simulation: Gemini, Google AI Mode, ChatGPT, Perplexity. No answer returned from: Copilot. Copy must claim only the engines that answered.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 7,"running_google_ads is ""No public data"" for 4 of 33 companies: the Ads Transparency Center verdict could not be read (4 of them have no website on the Business Profile). Not the same as No.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 8,"years_in_business null for 31 of 33: only the top 5 sites are crawled for a ""since YYYY"" line, and it is never inferred. NOTE: this field is NOT in the template contract's company table, so it blocks nothing.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 9,"ai_narrative_contrast null: 0 of the 10 companies in the rendered table were recommended by the engines that ran, so there is no high-review-not-recommended against low-review-recommended contrast to draw. Never invented.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 10,"Sendable audience: 11 of 33 scored companies have an email in data/harvest/TEXAS-MASTER.csv (5 named mailboxes; 5 of the 10 in the table). Matched by website domain first, then exact company name within the market. The other 22 are phone and contact-form targets.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 11,"running_google_ads is ""No public data"" for 4 of 33 companies: the Ads Transparency Center verdict could not be read (4 of them have no website on the Business Profile). Not the same as No.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 12,"years_in_business null for 31 of 33: only the top 5 sites are crawled for a ""since YYYY"" line, and it is never inferred. NOTE: this field is NOT in the template contract's company table, so it blocks nothing.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 13,"Duplicate Google Business Profiles needing a human decision: ""Willard Air Conditioning & Plumbing"" and ""Coomes Air Conditioning & Heating"" (same domain willardac.com but unrelated names; left as two rows for a human to decide). Left as separate rows because a shared domain with unrelated names is not proof, and merging on a guess is worse than two rows.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 14,Photo slots and their alt text and captions are supplied by the web team. A script cannot license city photography. See TEMPLATE-CONTRACT section 7.,note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 15,"ppc_scaled_claim null by decision (Burke, 2026-09-04): the revenue-threshold PPC sentence needs revenue data RSG does not have and never will. The sentence is dropped from every city and its row is gone from the handoff sheet.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 16,"Shape note: this file follows data/markets/schema.template.json (the master template contract). render-report.mjs validates the OLDER data/markets/schema.json instead, so it cannot render this file yet. TEMPLATE-CONTRACT section 5 lists what the renderer must change.",note,collection log,FILLED,Carried from the collector. Read before building.
