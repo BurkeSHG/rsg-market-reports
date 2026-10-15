@@ -13,7 +13,7 @@ Section,Field,Value,Unit,Source,Status,Note
 01 Hero,H1,160 Homeowners Search for HVAC in Devine Every Month. Where Do You Show Up?,headline,"monthly_searches + city, template pattern",FILLED,
 01 Hero,Subhead,"We tracked the top HVAC companies in Devine across Google Maps, paid ads, and AI answers. Here is where everyone stands, and where the open lanes are.",paragraph,"template pattern, city merged",FILLED,
 01 Hero,Channel strip,GOOGLE MAPS / PAID SEARCH / AI ANSWERS,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
-01 Hero,Byline,Prepared by RS Gonzales,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+01 Hero,Byline,Prepared by Sarah Gonzales,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 01 Hero,Tagline,We do marketing for HVAC and home-services contractors. Nothing else.,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 01 Hero,Hero background photo,,image,assets.csv slot hero_landmark,PENDING,Web team supplies. See assets.csv.
 02 Four stat tiles,Tile 1: residential HVAC spend,$6.2M,USD/year,homes x $800 (FORMULA.md),FILLED,
