@@ -1,0 +1,11 @@
+Rank,Company,Reviews,Rating,Top3Map,NamedByAI,RecommendedByAI,RunningAds,AIQuotableContent,Website,InTable
+1,Lochridge Priest Home Services,2742,4.7,Yes,Yes,No,No,"per-company AI-quotable content is not collected per company; the page shows a market-level ""N of 5"" count instead (see handoff.csv section 17)",PENDING,Yes
+2,"Danco Heating, Cooling & Plumbing",1600,4.9,No,Yes,Yes,Yes,"per-company AI-quotable content is not collected per company; the page shows a market-level ""N of 5"" count instead (see handoff.csv section 17)",PENDING,Yes
+3,"Clark Heating and Air Conditioning, LLC",800,4.8,No,Yes,Yes,No,"per-company AI-quotable content is not collected per company; the page shows a market-level ""N of 5"" count instead (see handoff.csv section 17)",PENDING,Yes
+4,Oasis Heating & Cooling,461,4.8,No,Yes,No,No,"per-company AI-quotable content is not collected per company; the page shows a market-level ""N of 5"" count instead (see handoff.csv section 17)",PENDING,Yes
+5,Polansky Heating & Air,400,4.8,Yes,No,Yes,No,"per-company AI-quotable content is not collected per company; the page shows a market-level ""N of 5"" count instead (see handoff.csv section 17)",PENDING,Yes
+6,Comfort Plus Heating and Cooling LLC,350,4.6,No,No,No,Yes,"per-company AI-quotable content is not collected per company; the page shows a market-level ""N of 5"" count instead (see handoff.csv section 17)",PENDING,Yes
+7,Legacy Home Services,300,4.7,No,No,No,No public data,"per-company AI-quotable content is not collected per company; the page shows a market-level ""N of 5"" count instead (see handoff.csv section 17)",PENDING,Yes
+8,Falcon 5 Plumbing & HVAC,250,4.5,No,No,No,Yes,"per-company AI-quotable content is not collected per company; the page shows a market-level ""N of 5"" count instead (see handoff.csv section 17)",PENDING,Yes
+9,Hobson AC,150,4.6,No,No,No,No public data,"per-company AI-quotable content is not collected per company; the page shows a market-level ""N of 5"" count instead (see handoff.csv section 17)",PENDING,Yes
+10,Zip Air,49,4.3,No,No,No,No public data,"per-company AI-quotable content is not collected per company; the page shows a market-level ""N of 5"" count instead (see handoff.csv section 17)",PENDING,Yes

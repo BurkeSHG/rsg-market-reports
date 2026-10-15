@@ -1,0 +1,138 @@
+Section,Field,Value,Unit,Source,Status,Note
+00 Eyebrow and meta,City,Waco,text,data/texas-markets.json,FILLED,
+00 Eyebrow and meta,State,TX,text,data/texas-markets.json,FILLED,
+00 Eyebrow and meta,State abbreviation,,text,data/texas-markets.json,PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+00 Eyebrow and meta,URL slug,waco-tx,text,markets file,FILLED,
+00 Eyebrow and meta,Page URL,/market-report/waco-tx/,path,TEMPLATE-CONTRACT section 7,FILLED,
+00 Eyebrow and meta,Meta title,Where Waco HVAC Companies Rank Online in 2026,text,TEMPLATE-CONTRACT section 7 pattern,FILLED,
+00 Eyebrow and meta,Meta description,"See where every major HVAC company in Waco stands on Google Maps, paid ads, and AI answers, and which lanes are still open. Book a strategy session.",text,TEMPLATE-CONTRACT section 7 pattern,FILLED,
+00 Eyebrow and meta,Robots,"noindex, nofollow (meta AND X-Robots-Tag header)",directive,TEMPLATE-CONTRACT section 7,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+00 Eyebrow and meta,Eyebrow label,HVAC MARKET INTELLIGENCE,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+00 Eyebrow and meta,Report month stamp,,text,collection date,PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+00 Eyebrow and meta,Metro label,,text,markets file,PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+01 Hero,H1,"3,470 Homeowners Search for HVAC in Waco Every Month. Where Do You Show Up?",headline,"monthly_searches + city, template pattern",FILLED,
+01 Hero,Subhead,"We tracked the top HVAC companies in Waco across Google Maps, paid ads, and AI answers. Here is where everyone stands, and where the open lanes are.",paragraph,"template pattern, city merged",FILLED,
+01 Hero,Channel strip,GOOGLE MAPS / PAID SEARCH / AI ANSWERS,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+01 Hero,Byline,Prepared by RS Gonzales,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+01 Hero,Tagline,We do marketing for HVAC and home-services contractors. Nothing else.,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+01 Hero,Hero background photo,,image,assets.csv slot hero_landmark,PENDING,Web team supplies. See assets.csv.
+02 Four stat tiles,Tile 1: residential HVAC spend,$50.0M,USD/year,homes x $800 (FORMULA.md),FILLED,
+02 Four stat tiles,Tile 2: share decided online,$20.0M,USD/year,40% of tile 1 (FORMULA.md),FILLED,
+02 Four stat tiles,Tile 3: monthly searches,"3,470",searches/month,"Search Atlas keyword research, generic terms at city geo target, de-duplicated",FILLED,
+02 Four stat tiles,Tile 4: top-3 map click share,42%,percent,third-party industry stat,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+02 Four stat tiles,Households used for sizing,"60,000",homes,data/texas-markets.json,FILLED,
+02 Four stat tiles,Households basis note,,text,markets file,PENDING,"Record which household basis was used. OPEN ITEM: Waco's published $50M implies ~60,000 homes against 75,700 households on file. Pin the basis once (FORMULA.md section 2)."
+02 Four stat tiles,Annual spend per home,$800,USD/year,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+03 Audit CTA card,Button label,Get My Free 'HVAC in Waco' Audit,text,"template pattern, city merged",FILLED,
+03 Audit CTA card,Destination,rsgonzales.com/seo-audit-for-hvac/,url,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+04 Channel 1 Google Maps,H2,See Exactly Where You Rank Against Every Major HVAC Company in Waco,headline,"template pattern, city merged",FILLED,
+04 Channel 1 Google Maps,Core search terms,,list,fixed pattern per city,PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+04 Channel 1 Google Maps,Companies tracked,10,count,every real contractor scored (all rows in companies.csv),FILLED,
+04 Channel 1 Google Maps,Companies shown in the table,10,count,rows in companies.csv with InTable = Yes,FILLED,
+04 Channel 1 Google Maps,Scorecard table,"see companies.csv: 10 scored, render the 10 rows with InTable = Yes",table,companies.csv,FILLED,
+04 Channel 1 Google Maps,Legend,Observed / Not there / No public data,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+04 Channel 1 Google Maps,Narrative paragraph 1,"We scored 10 HVAC companies serving Waco. The 10 shown range from 2,742 reviews down to 49, and 0 of them hold a top-three map position for the core searches. Across all 10, 0 do.",paragraph,written per city from the scorecard,FILLED,
+04 Channel 1 Google Maps,Narrative paragraph 2,,paragraph,written per city from the scorecard,PENDING,Written by Burke from the scorecard.
+04 Channel 1 Google Maps,Section photo,,image,assets.csv slot secondary_landmark,PENDING,Web team supplies. See assets.csv.
+05 Bar pair graphic,"High reviews, NOT top 3: company",,text,highest review_count with top3_map = No (derived),PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+05 Bar pair graphic,"High reviews, NOT top 3: reviews",,count,derived,PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+05 Bar pair graphic,"Low reviews, IN top 3: company",,text,lowest review_count with top3_map = Yes (derived),PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+05 Bar pair graphic,"Low reviews, IN top 3: reviews",,count,derived,PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+05 Bar pair graphic,Bar scale maximum,"2,742",count,max review_count in the scorecard (derived),FILLED,
+06 Maps source note,Top-3 holders in this list,0,count,count of top3_map = Yes (derived),FILLED,
+06 Maps source note,Outside-the-list footnote,"Only 0 of the 10 companies shown hold a top-three map spot, so the remaining position or positions are held by a company outside this table.",text,derived when holders < 3,FILLED,
+06 Maps source note,Reviews as-of month,,text,collection date,PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+07 Reviews explainer,H3 and 2 paragraphs,Reviews Are Not the Whole Story (static copy),copy,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+07 Reviews explainer,Section photo,,image,assets.csv slot typical_home,PENDING,Web team supplies. See assets.csv.
+08 CTA,Button,Book a Straight-Talk Strategy Session -> /book-strategy-session/,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+09 Channel 2 Paid Search,H2,Google Has Turned Into a Pay-to-Play Search Engine,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+09 Channel 2 Paid Search,Sub-head,"The Top of the Results Page Is Now Sold, Not Earned",headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+09 Channel 2 Paid Search,Intro paragraph,Most Waco shops still think of Google as a place where the best answer wins.,paragraph,"static copy, city merged",FILLED,
+09 Channel 2 Paid Search,Zone 01 stat: LSA on home-services searches,28%,percent,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+09 Channel 2 Paid Search,Zone 02 stat: zero-click,68%,percent,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+09 Channel 2 Paid Search,Zone 03 stat: ads in the map pack,Under 3% to 22%,percent,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+09 Channel 2 Paid Search,SERP query,,text,fixed pattern: emergency ac repair <city>,PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+09 Channel 2 Paid Search,SERP screenshot file,,image,live logged-out Google search with city geo,PENDING,Collector captured a raw screenshot. The web team still needs to add the four numbered annotation zones. See assets.csv.
+09 Channel 2 Paid Search,SERP capture date,,date,capture,PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+09 Channel 2 Paid Search,SERP description,,paragraph,written from the screenshot,PENDING,Plain-English description of what the screenshot shows. Needs a human pass.
+09 Channel 2 Paid Search,AI Overview present,,Yes/No,observed on the SERP,PENDING,Drives the zone 02 copy. Observe on the live SERP.
+09 Channel 2 Paid Search,Section background photo,,image,assets.csv slot skyline_or_aerial_1,PENDING,Web team supplies. See assets.csv.
+11 Channel 2 Local Services Ads,H3,Local Services Ads Are the Closest Thing to Predictable HVAC Demand in Waco,headline,"template pattern, city merged",FILLED,
+11 Channel 2 Local Services Ads,Cost per qualified lead,$60 to $105,USD/lead,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+11 Channel 2 Local Services Ads,Close rate,80%,percent,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+11 Channel 2 Local Services Ads,Return on ad spend,11x,multiple,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+11 Channel 2 Local Services Ads,Illustrative label (required),"Illustrative economics for a well-run account, not a guarantee.",text,"Sarah, Aug 20: the 3-box graphic must be labeled illustrative",CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+11 Channel 2 Local Services Ads,Slow month lead range,4 to 5 leads,leads/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+11 Channel 2 Local Services Ads,Peak month lead range,15 to 60 leads,leads/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+11 Channel 2 Local Services Ads,What decides lead volume (4 cards),Review momentum / Services promoted / Market coverage / Account management,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+15 Channel 2 Pay-Per-Click,H3,Pay-Per-Click Is What Separates the Shops That Scale From the Ones That Stall,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+15 Channel 2 Pay-Per-Click,"Cost per click, AC repair",$38.00,USD/click,Search Atlas keyword research at the city geo target,FILLED,
+15 Channel 2 Pay-Per-Click,Share not running PPC claim,None of the 10 Waco HVAC companies whose advertiser status could be resolved is running Google ads. The paid lane in this market is wide open.,sentence,Ads Transparency Center across every scored company,FILLED,
+15 Channel 2 Pay-Per-Click,Landing page vs homepage lift,5x to 8x,multiple,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+15 Channel 2 Pay-Per-Click,Section background photo,,image,assets.csv slot skyline_or_aerial_2,PENDING,Web team supplies. See assets.csv.
+17 Channel 3 AI Answers,H2,AI Is Already Recommending Waco HVAC Companies by Name. Is It Recommending You?,headline,"template pattern, city merged",FILLED,
+17 Channel 3 AI Answers,AI engines actually queried,,list,Search Atlas Prompt Simulation,PENDING,Must name ONLY the engines that actually returned an answer. Never claim an engine that did not run.
+17 Channel 3 AI Answers,Prompt set,,list,fixed prompt family,PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+17 Channel 3 AI Answers,AI table (top 5 by reviews),"see companies.csv, first 5 rows, plus badges below",table,derived from the scorecard,FILLED,
+17 Channel 3 AI Answers,AI row 1 badge: Lochridge Priest Home Services,"MOST REVIEWS, NEVER RECOMMENDED",text,derived: mentioned vs recommended vs review rank,FILLED,
+17 Channel 3 AI Answers,"AI row 2 badge: Danco Heating, Cooling & Plumbing","RECOMMENDED, NEVER MENTIONED",text,derived: mentioned vs recommended vs review rank,FILLED,
+17 Channel 3 AI Answers,"AI row 3 badge: Clark Heating and Air Conditioning, LLC","RECOMMENDED, NEVER MENTIONED",text,derived: mentioned vs recommended vs review rank,FILLED,
+17 Channel 3 AI Answers,AI row 4 badge: Oasis Heating & Cooling,"no badge (mentioned NO, recommended NO)",text,derived: mentioned vs recommended vs review rank,FILLED,"No pill for this row by design. Only three states earn one: MOST REVIEWS NEVER RECOMMENDED, IN BOTH, RECOMMENDED NEVER MENTIONED."
+17 Channel 3 AI Answers,AI row 5 badge: Polansky Heating & Air,"RECOMMENDED, NEVER MENTIONED",text,derived: mentioned vs recommended vs review rank,FILLED,
+17 Channel 3 AI Answers,Mention-vs-recommend contrast sentence,"Lochridge Priest Home Services carries 2,742 reviews and the engines did not recommend it, while Polansky Heating & Air was recommended with 400. That gap is a content and structure gap, not a reputation gap.",sentence,derived from the AI table,FILLED,
+17 Channel 3 AI Answers,Pages built for AI to quote,,N of 5,crawl of the highest-reviewed sites,PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+17 Channel 3 AI Answers,Sites with any Q&A content,,N of 5,crawl of the highest-reviewed sites,PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+17 Channel 3 AI Answers,AI reference link,rsgonzales.com/llm-info/,url,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+20 Search terms,H2,"Which Waco Search Terms You Can Still Win, and Which Are Already Locked Up",headline,"template pattern, city merged",FILLED,
+20 Search terms,Winnable terms,[object Object] | [object Object] | [object Object] | [object Object],list (4),lowest third by paid competition density,FILLED,
+20 Search terms,Contested terms,[object Object] | [object Object] | [object Object] | [object Object],list (4),middle third by paid competition density,FILLED,
+20 Search terms,Locked terms,[object Object] | [object Object] | [object Object] | [object Object],list (4),highest third by paid competition density,FILLED,
+20 Search terms,Lane rule (for the methodology footer),,text,recorded by the collector,PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+20 Search terms,Flywheel graphic,"win jobs -> reviews -> organic -> ads (Sarah, Aug 20)",graphic,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+20 Search terms,Section background photo,,image,assets.csv slot neighborhood_1,PENDING,Web team supplies. See assets.csv.
+22 Sarah's Take,H2 and 3 paragraphs,"This Is Not a Lead Problem. It Is a System Problem. (static copy, city merged in paragraph 1)",copy,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+22 Sarah's Take,Section photo,,image,assets.csv slot neighborhood_2,PENDING,Web team supplies. See assets.csv.
+23 One System,"H2, H3, 4 blocks, 2 closing paragraphs","Just Like HVAC Systems, Marketing Works Best When Every Component Works Together (static copy and client proof images)",copy,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+25 Pricing,H2,What It Costs to Work With Us,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+25 Pricing,Grow,"$2,200/mo",USD/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+25 Pricing,Accelerate,"$3,500/mo",USD/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+25 Pricing,Dominate,"$5,000/mo",USD/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+25 Pricing,Minimum ad budget,"$3,000/mo minimum",USD/month,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+25 Pricing,Fine print,"0% ad markup, website you own, $0 setup fees, 12-month lock, 30-day money-back guarantee",text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+27 Where this goes next,H2,"3,470 Searches a Month. How Many End With Your Phone Ringing?",headline,reuses monthly_searches,FILLED,
+27 Where this goes next,Primary CTA,Book My Waco Strategy Session -> /book-strategy-session/,text,"template pattern, city merged",FILLED,
+27 Where this goes next,Secondary CTA,Get My Free SEO Audit -> /seo-audit-for-hvac/,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+27 Where this goes next,Trust badges,$0 setup fees / 0% ad markup / 30-day money-back guarantee,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+27 Where this goes next,Phone,(202) 400-2644,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+27 Where this goes next,Closing photo,,image,assets.csv slot closing_scene,PENDING,Web team supplies. See assets.csv.
+28 Method and sources,H2,How These Numbers Were Put Together,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+28 Method and sources,H3 a,Method,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+28 Method and sources,H3 b,Sources,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+28 Method and sources,Sizing formula sentence,"60,000 homes x $800 blended annual residential HVAC spend, 40% treated as decided online.",sentence,derived from households,FILLED,
+28 Method and sources,Volume and CPC source,"Search Atlas Keyword Research, generic terms at the city Google Ads geo target, close variants de-duplicated",text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+28 Method and sources,Geo target used for volume,,Google Ads criteria ID,recorded by the collector next to the research id,PENDING,Needs a Search Atlas run with the city location_id.
+28 Method and sources,Reviews as-of,,text,collection date,PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+28 Method and sources,AI engines disclosure,,list,must match the engines actually queried,PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+28 Method and sources,CPC source line,,sentence,derived from the CPC,PENDING,"This city's JSON still uses the older render schema (no CPC, no AI engines, no photo slots). Re-run the collector to fill it."
+28 Method and sources,AI-generated image disclosure,The kitchen scene in the closing section is AI-generated and disclosed in the method note.,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+28 Method and sources,Case studies reference,rsgonzales.com/case-studies/ (use Skyline),url,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+29 Footer,Footer line,Marketing for HVAC and home-services contractors / rsgonzales.com / (202) 400-2644,text,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+29b Cross-checks,Companies tracked equals scorecard rows,PASS,check,computed by build-handoff-sheet.mjs,FILLED,
+29b Cross-checks,Bar scale equals highest review count,PASS,check,computed by build-handoff-sheet.mjs,FILLED,
+29b Cross-checks,"Scorecard sorted strictly by reviews, descending",PASS,check,computed by build-handoff-sheet.mjs,FILLED,
+29b Cross-checks,Table rows are the highest-reviewed companies,PASS,check,computed by build-handoff-sheet.mjs,FILLED,
+29b Cross-checks,Market size equals homes x $800,MISMATCH,check,computed by build-handoff-sheet.mjs,PENDING,"Market size is $50,000,000 but 60,000 homes x $800 is $48,000,000. Either the household basis differs from the file or the figure was carried over from an earlier method. Resolve before publishing (FORMULA.md section 2)."
+29b Cross-checks,Online share equals 40% of market size,PASS,check,computed by build-handoff-sheet.mjs,FILLED,
+29b Cross-checks,Keyword lanes hold 4 terms each,PASS,check,computed by build-handoff-sheet.mjs,FILLED,
+30 Collector flags (read these),Flag 1,"Reconstructed from v3 HTML, not collected. Session 2 (collect-market.mjs) should overwrite this file and re-verify every number.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 2,"REVIEW COUNTS ARE SUSPECT. The v3 values kept here are round numbers (1600, 800, 461, 400, 350, 300, 250, 150) while Sarah's Aug 21 Notion rewrite has precise ones (1306, 584, 1121, 467, 213, 172, 97, 72). Deltas run both directions and reach 2,528 on Legacy Home Services, so this is not review growth. v3 appears to publish rounded estimates under a column labeled Reviews. Kept per the Session 3 brief; Burke must decide before a new city ships. See waco-tx.collection-log.md.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 3,"review_concentration_top3_pct=64 is the v3 figure and is not reproducible from the 10 listed companies (top 3 hold 72% of the 7,102 listed reviews). Presumably computed across all 20 scored companies, whose rows v3 does not show.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 4,"companies_scored=20 per v3 scorecard denominators, but v3 lists only 10 companies. The other 10 are unknown.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 5,"Per-company website checks (online_booking, review_widget_or_page, financing_page, service_pages), website, phone, years_in_business are null for every company; v3 has only aggregate scorecard figures.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 6,Keyword volumes and CPCs are null except AC repair Waco ($38). Lanes come from v3 without volumes.,note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 7,AI engines: v3 footer vs Jul 30 methodology disagree (see channels.ai.engines_run_flag).,note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 8,Decades in business section has no data (years_in_business null everywhere) and is omitted from the render until Session 2 supplies it.,note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 9,bar_pair suppressed and the first maps_narrative sentence with it: no company in the rendered table holds a top-three map spot. Never filled from outside the rendered table.,note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 10,"Sendable audience: 0 of 10 scored companies have an email in data/harvest/TEXAS-MASTER.csv (0 named mailboxes; 0 of the 10 in the table). Matched by website domain first, then exact company name within the market. The other 10 are phone and contact-form targets.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 11,"years_in_business null for 10 of 10: only the top 5 sites are crawled for a ""since YYYY"" line, and it is never inferred. NOTE: this field is NOT in the template contract's company table, so it blocks nothing.",note,collection log,FILLED,Carried from the collector. Read before building.
+30 Collector flags (read these),Flag 12,ai_top5_quotable_page_count null: no top-5 site could be crawled.,note,collection log,FILLED,Carried from the collector. Read before building.

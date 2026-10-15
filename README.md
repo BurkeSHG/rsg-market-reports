@@ -61,6 +61,10 @@ Only two narrative paragraphs are genuinely per-market, and they arrive written 
   or block rather than inventing a number. Every figure on these pages is checkable by the
   contractor reading it.
 
+## Held markets (not finished)
+
+`markets/waco-tx` and `markets/devine-tx` are held and unfinished as of 2026-10-15. Read the `NOT-FINISHED.md` in each folder. Do not build a page from either one yet.
+
 ## What is not in this repo
 
 Prospect email addresses, contractor owner names, and anything else from the outreach side. This
