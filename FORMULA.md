@@ -35,12 +35,16 @@ lanes                 = 12 terms sorted by paid competition, split 4 / 4 / 4
 | Constant | Value |
 |---|---|
 | Annual residential HVAC spend per home | $800 |
-| Share of clicks to the top 3 map results | 44% |
-| Searches ending with no click | 68% |
+| People searching locally who click a business in the Google map (hero tile 4) | 42%. WebFX, local SEO statistics: 42% of local searchers click on Google map packs, citing Forbes Advisor. |
+| Home-services searches showing Local Services Ads (SERP zone 01) | 28%. WebFX, home-services search study, July 2026: Local Services Ads appeared on 28.4% of 500 home-services searches. |
+| US Google searches ending with no click (SERP zone 02) | 68%. SparkToro, June 2026, Similarweb data: 68% of US Google searches ended without a click, January to April 2026. |
+| Ads inside the map pack (SERP zone 03) | Under 3% to 22%. Places Scout, reported by PPC.land, February 2026: ads appeared in the local map pack on under 3% of tracked mobile keywords in November 2025 and about 22% in January 2026. |
 | Pricing | Grow $2,200, Accelerate $3,500, Dominate $5,000, plus $3,000 minimum ad budget |
 | Guarantee | 30 days |
 | Phone | (202) 400-2644 |
 | Case studies | rsgonzales.com/case-studies/, use Skyline |
+
+**Correction, 2026-10-15 (Burke approved).** The industry stats above replace the earlier set, which could not be sourced. Zahra Tariq rechecked them and the facts were confirmed on 2026-10-15 against WebFX, SparkToro (Similarweb data) and Places Scout via PPC.land. Changes: map-pack clicks 44% became 42%. The Local Services Ads stat ("55.8% of clicks land above the free results") is not on the WebFX page and became 28% of home-services searches showing LSAs. The "2x paid share" stat credited to ALM Corp has no source and was removed from every page. Zero-click stays 68%, but its source is SparkToro with Similarweb data, not "SparkToro / Datos". Map-pack ads became "Under 3% to 22%", mobile only. These corrected values are the standard any QA check compares against. Market files keep the field names `above_organic_with_lsa` and `map_pack_ads` for schema stability; the values and page wording are the corrected ones.
 
 Static copy blocks, written once and reused with only the city name swapped: Sarah's Take, One System, all calls to action, Method and Sources.
 

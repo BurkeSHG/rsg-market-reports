@@ -19,7 +19,7 @@ Section,Field,Value,Unit,Source,Status,Note
 02 Four stat tiles,Tile 1: residential HVAC spend,$17.3M,USD/year,homes x $800 (FORMULA.md),FILLED,
 02 Four stat tiles,Tile 2: share decided online,$6.9M,USD/year,40% of tile 1 (FORMULA.md),FILLED,
 02 Four stat tiles,Tile 3: monthly searches,350,searches/month,"Search Atlas keyword research, generic terms at city geo target, de-duplicated",FILLED,
-02 Four stat tiles,Tile 4: top-3 map click share,44%,percent,third-party industry stat,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+02 Four stat tiles,Tile 4: top-3 map click share,42%,percent,third-party industry stat,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 02 Four stat tiles,Households used for sizing,"21,600",homes,data/texas-markets.json,FILLED,
 02 Four stat tiles,Households basis note,"data/texas-markets.json: Census Vintage 2024 estimates, sum of incorporated places: Weatherford 39,397; Aledo 6,655; Willow Park 6,851; Hudson Oaks 2,741; Springtown 4,843",text,markets file,FILLED,
 02 Four stat tiles,Annual spend per home,$800,USD/year,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
@@ -48,10 +48,9 @@ Section,Field,Value,Unit,Source,Status,Note
 09 Channel 2 Paid Search,H2,Google Has Turned Into a Pay-to-Play Search Engine,headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 09 Channel 2 Paid Search,Sub-head,"The Top of the Results Page Is Now Sold, Not Earned",headline,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 09 Channel 2 Paid Search,Intro paragraph,Most Weatherford shops still think of Google as a place where the best answer wins.,paragraph,"static copy, city merged",FILLED,
-09 Channel 2 Paid Search,Zone 01 stat: above organic with LSA,55.8%,percent,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
-09 Channel 2 Paid Search,Zone 01 stat: paid share change,2x,multiple,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+09 Channel 2 Paid Search,Zone 01 stat: LSA on home-services searches,28%,percent,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 09 Channel 2 Paid Search,Zone 02 stat: zero-click,68%,percent,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
-09 Channel 2 Paid Search,Zone 03 stat: ads in the map pack,3% to 22%,percent,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
+09 Channel 2 Paid Search,Zone 03 stat: ads in the map pack,Under 3% to 22%,percent,,CONSTANT,Same in every city. Do not research. Source: FORMULA.md section 3.
 09 Channel 2 Paid Search,SERP query,emergency ac repair weatherford,text,fixed pattern: emergency ac repair <city>,FILLED,
 09 Channel 2 Paid Search,SERP screenshot file,data/markets/_assets/weatherford-tx/serp-weatherford-tx.png,image,live logged-out Google search with city geo,FILLED,
 09 Channel 2 Paid Search,SERP capture date,2026-09-12,date,capture,FILLED,
